@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+        <head>
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="description" content="">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>My portfolio</title>
+                <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+               
+                <link rel="stylesheet" href="css/style.css">
+                <script type="text/javascript" src="js/functions.js"></script>
+            </head>  
+        <body>         
+            <h1>SALARY CALCULATOR</h1>           
+            <div class="box">
+              <div class="fields">
+                  <form>
+                    <label>Pay per Hour:</label>
+                    <input type="text" id="pay" />
+                    <label>Average hours a day:</label>
+                    <input type="text" id="hours" /> 
+
+                    <label>Average days in month:</label>
+                    <input type="text" id="days" /> 
+                    <!--Martin's trick -->
+                    <span class="student-label">Student:</span>  
+                    Yes <input type="radio" name="student" value="0.15"/> 
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    No <input type="radio" name="student" value="0.25" checked />
+                
+                <button onclick="calculate()">COMPUTE</button>
+                
+                    <h4 id="results"></h4>
+                  </form>
+                </div>
+              </div>
+                </body>
+                </html>    
